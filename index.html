@@ -533,7 +533,7 @@
       <div class="hero-cta">
         <a href="mailto:cody.lee.cl1@gmail.com" class="btn-primary">Get in touch</a>
         <a href="https://github.com/clee12111" class="btn-secondary">GitHub <span class="arrow">→</span></a>
-        <a href="Cody_Lee_Resume.pdf" class="btn-secondary">Resume <span class="arrow">→</span></a>
+        <a href="/Cody_Lee_Resume.pdf" class="btn-secondary">Resume <span class="arrow">→</span></a>
       </div>
     </header>
 
@@ -579,7 +579,7 @@
 
             <rect x="799" y="65" width="190" height="100" rx="10" fill="var(--bg-card)" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6,4"/>
             <text x="894" y="95" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="700">04</text>
-            <text x="894" y="122" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="600" font-family="Inter, sans-serif">vLLM Forensics</text>
+            <text x="894" y="122" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="600" font-family="Inter, sans-serif">RAG Forensics</text>
             <text x="894" y="145" text-anchor="middle" fill="var(--text-dim)" font-size="12">In Progress</text>
 
             <text x="500" y="210" text-anchor="middle" fill="var(--text-muted)" font-size="14" font-family="Inter, sans-serif" font-style="italic">each carries the previous project's hard-won lesson forward</text>
@@ -615,10 +615,10 @@
         <div class="arc-node">
           <div class="arc-node-head">
             <span class="arc-num">04</span>
-            <span class="arc-name">vLLM Retrieval Forensics</span>
+            <span class="arc-name">Production RAG Stack Forensics</span>
             <span class="arc-date">In Progress, 2026</span>
           </div>
-          <p class="arc-body">Combines the previous three: the LLM workflow from Aether, the forensic methodology from Polymarket, applied to LLM-based code retrieval over the vLLM codebase. Stage-by-stage failure documentation as the project proceeds.</p>
+          <p class="arc-body">Combines the previous three: the LLM workflow from Aether, the forensic methodology from Polymarket, now applied to the production stack that AI engineering teams actually ship on — LangGraph, Pinecone, Langfuse, cross-provider inference, and a custom MCP server exposing the instrumentation as agent-queryable tools.</p>
         </div>
       </div>
     </section>
@@ -881,72 +881,77 @@
 
       <article class="project">
         <div class="project-head">
-          <h3 class="project-title">vLLM Retrieval Forensics<span class="in-progress">IN PROGRESS</span></h3>
+          <h3 class="project-title">Production RAG Stack Forensics<span class="in-progress">IN PROGRESS</span></h3>
           <span class="project-date">2026</span>
         </div>
-        <p class="project-summary">Forensic study of retrieval and answer-generation over the vLLM codebase — extending the polymarket autopsy methodology to LLM infrastructure systems.</p>
+        <p class="project-summary">Forensic study of the production RAG stack — LangGraph, Pinecone, Langfuse, and cross-provider inference — over the FastAPI documentation corpus. Extends the polymarket autopsy methodology to the tools AI engineering teams actually ship on, with a custom MCP server exposing instrumentation as agent-queryable tools.</p>
 
         <div class="pipeline-wrap">
-          <svg class="pipeline-svg" viewBox="0 0 940 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vLLM planned pipeline">
+          <svg class="pipeline-svg" viewBox="0 0 940 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Production RAG Stack Forensics planned pipeline">
             <defs>
-              <marker id="vl-arrow" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+              <marker id="rf-arrow" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
                 <path d="M0,0 L8,3 L0,6 z" fill="var(--pipeline-stroke)"/>
               </marker>
             </defs>
             <g font-family="JetBrains Mono, monospace">
-              <rect x="10" y="30" width="155" height="80" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
-              <text x="87" y="58" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">vLLM codebase</text>
-              <text x="87" y="82" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">+ chunking</text>
+              <rect x="10" y="30" width="155" height="90" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
+              <text x="87" y="58" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">FastAPI docs</text>
+              <text x="87" y="78" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">corpus +</text>
+              <text x="87" y="94" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">chunking</text>
 
-              <line x1="165" y1="70" x2="200" y2="70" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#vl-arrow)"/>
+              <line x1="165" y1="75" x2="200" y2="75" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#rf-arrow)"/>
 
-              <rect x="202" y="20" width="155" height="100" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
-              <text x="279" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">hybrid retrieval</text>
-              <text x="279" y="64" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">BM25 + dense</text>
-              <text x="279" y="80" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">+ rerank</text>
-              <text x="279" y="102" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">code chunks</text>
+              <rect x="202" y="20" width="155" height="110" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
+              <text x="279" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">Pinecone +</text>
+              <text x="279" y="62" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">hybrid retrieval</text>
+              <text x="279" y="82" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">BM25 + dense</text>
+              <text x="279" y="98" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">+ Haiku rerank</text>
+              <text x="279" y="118" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">retrieved chunks</text>
 
-              <line x1="357" y1="70" x2="392" y2="70" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#vl-arrow)"/>
+              <line x1="357" y1="75" x2="392" y2="75" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#rf-arrow)"/>
 
-              <rect x="394" y="20" width="155" height="100" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
-              <text x="471" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">tiered inference</text>
-              <text x="471" y="64" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">multi-model</text>
-              <text x="471" y="80" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">routing</text>
-              <text x="471" y="102" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">answers</text>
+              <rect x="394" y="20" width="155" height="110" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
+              <text x="471" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">LangGraph</text>
+              <text x="471" y="62" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">orchestration</text>
+              <text x="471" y="82" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">stateful</text>
+              <text x="471" y="98" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">agent loop</text>
+              <text x="471" y="118" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">+ Langfuse traces</text>
 
-              <line x1="549" y1="70" x2="584" y2="70" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#vl-arrow)"/>
+              <line x1="549" y1="75" x2="584" y2="75" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#rf-arrow)"/>
 
-              <rect x="586" y="20" width="155" height="100" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
-              <text x="663" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">stratified eval</text>
-              <text x="663" y="64" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">stage-by-stage</text>
-              <text x="663" y="80" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">attribution</text>
-              <text x="663" y="102" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">where it fails</text>
+              <rect x="586" y="20" width="155" height="110" rx="8" fill="var(--pipeline-fill)" stroke="var(--pipeline-stroke)" stroke-width="1.4" stroke-dasharray="5,3"/>
+              <text x="663" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">cross-provider</text>
+              <text x="663" y="62" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">inference</text>
+              <text x="663" y="82" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">Sonnet 4.6 /</text>
+              <text x="663" y="98" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">GPT-5.4 / Gemini</text>
+              <text x="663" y="118" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">answers</text>
 
-              <line x1="741" y1="70" x2="776" y2="70" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#vl-arrow)"/>
+              <line x1="741" y1="75" x2="776" y2="75" stroke="var(--pipeline-stroke)" stroke-width="1.5" marker-end="url(#rf-arrow)"/>
 
-              <rect x="778" y="20" width="152" height="100" rx="8" fill="var(--pipeline-fill)" stroke="var(--accent)" stroke-width="2.2" stroke-dasharray="5,3"/>
-              <text x="854" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">forensic</text>
-              <text x="854" y="64" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">case studies</text>
-              <text x="854" y="80" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">published</text>
-              <text x="854" y="102" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">as work proceeds</text>
+              <rect x="778" y="20" width="152" height="110" rx="8" fill="var(--pipeline-fill)" stroke="var(--accent)" stroke-width="2.2" stroke-dasharray="5,3"/>
+              <text x="854" y="44" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">MCP server</text>
+              <text x="854" y="62" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="500">+ autopsy</text>
+              <text x="854" y="82" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">evals, traces,</text>
+              <text x="854" y="98" text-anchor="middle" fill="var(--text-muted)" font-size="11.5">cost-per-stage</text>
+              <text x="854" y="118" text-anchor="middle" fill="var(--accent)" font-size="12" font-weight="600">queryable by agents</text>
 
-              <text x="470" y="135" text-anchor="middle" fill="var(--text-muted)" font-size="12.5" font-family="Inter, sans-serif" font-style="italic">planned architecture — implementation begins late May 2026</text>
+              <text x="470" y="153" text-anchor="middle" fill="var(--text-muted)" font-size="12.5" font-family="Inter, sans-serif" font-style="italic">planned architecture — implementation begins June 2026</text>
             </g>
           </svg>
         </div>
 
         <div class="project-block">
           <div class="project-block-label">What it proves</div>
-          <div class="project-block-content">The forensic measurement methodology generalizes from trading systems to LLM systems themselves. Project planning published; implementation underway with first case study expected within 4–6 weeks.</div>
+          <div class="project-block-content">Forensic methodology generalizes from a trading system I built to the production AI stack that companies hire for. Industry-standard tools throughout, with measurement-driven analysis of where the abstractions help and where they get in the way.</div>
         </div>
 
         <div class="project-block">
           <div class="project-block-label">Stack</div>
-          <div class="stack">Python · Anthropic SDK · vector retrieval · evaluation methodology</div>
+          <div class="stack">Python · LangGraph · Pinecone · Langfuse · Anthropic / OpenAI / Gemini APIs · FastAPI · MCP (Model Context Protocol)</div>
         </div>
 
         <div class="project-links">
-          <a href="https://github.com/clee12111/vllm-retrieval-forensics" class="project-link">Repo <span class="arrow">→</span></a>
+          <a href="https://github.com/clee12111/production-rag-forensics" class="project-link">Repo <span class="arrow">→</span></a>
         </div>
       </article>
     </section>
@@ -965,7 +970,7 @@
         </div>
         <div class="contact-row">
           <span class="contact-label">Resume</span>
-          <a href="Cody_Lee_Resume.pdf" class="contact-value">Cody_Lee_Resume.pdf</a>
+          <a href="/Cody_Lee_Resume.pdf" class="contact-value">Cody_Lee_Resume.pdf</a>
         </div>
       </div>
     </section>
